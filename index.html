@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+  </head>
+  <body>
+    <main class="main">
+      <form class="form">
+        <div>
+          <label>
+            DAY
+            <input
+              id="inputDays"
+              placeholder="DD"
+              type="number"
+              min="1"
+              max="31"
+              step="1"
+            />
+            <span class="error hidden">Must be a valid day</span>
+          </label>
+          <label>
+            MONTH
+            <input
+              id="inputMonths"
+              placeholder="MM"
+              type="number"
+              min="1"
+              max="12"
+              step="1"
+            />
+            <span class="error hidden">Must be a valid day</span>
+          </label>
+          <label>
+            YEAR
+            <input
+              id="inputYears"
+              placeholder="YYYY"
+              type="number"
+              min="1"
+              max="2024"
+              step="1"
+            />
+            <span class="error hidden">Must be a valid day</span>
+          </label>
+        </div>
+        <button class="btn">
+          <img src="./images/icon-arrow.svg" alt="Icon Arrow" />
+        </button>
+      </form>
+      <div>
+        <h3><span id="years"> 38 </span> years</h3>
+        <h3><span id="months"> 3 </span> months</h3>
+        <h3><span id="days"> 23 </span> days</h3>
+      </div>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
